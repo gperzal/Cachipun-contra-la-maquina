@@ -7,7 +7,6 @@
 
 label {
     color: #573737;
-    font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
 }
 
@@ -19,7 +18,7 @@ label {
 
 #opciones {
     text-align: center;
-    margin: 60px auto;
+    margin: 10px auto;
 }
 
   
@@ -33,7 +32,9 @@ label {
 body {
     background: #aaa0aa;
     text-align: center;
-    }
+    font-family: 'Space Mono', monospace;
+
+  }
   
   .container {
     padding-top: 30px;
@@ -41,7 +42,6 @@ body {
     
 h1 {
     color: #4e0c0c;
-    font-family: 'Space Mono', monospace;
     font-size: 3rem;
     text-align: center;
     font-weight: 300;
@@ -62,16 +62,13 @@ h1 {
     position: relative;
     background-color: #5984d4;
     padding: 20px 80px;
-    margin: 60px auto;
+    margin: 10px auto;
     border-radius: 20px;
     box-shadow: 0 6px #2E282A;
 
     color: rgb(15, 12, 12);
-    font-family: 'Space Mono', monospace;
     font-size: 1rem;
     font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
     letter-spacing: 2px;
   }
     
@@ -101,7 +98,6 @@ h1 {
   
   #resultado{
     color: rgb(15, 12, 12);
-    font-family: 'Space Mono', monospace;
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
