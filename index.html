@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachipún contra la Máquina</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <div id="logo">
+        <img src="./assets/img/cachipun.avif" alt="Logo">
+    </div>
+    <h1>Cachipún contra la Máquina</h1>
+    <div>
+        <label for="cantidad">¿Cuántas veces quieres jugar?: </label>
+        <input type="number" id="cantidad" min="1" max="3" value="1" required>
+
+    </div>
+    <div id="opciones">
+        <img src="./assets/img/piedra.png" alt="Piedra" onclick="seleccionarJugada('piedra')">
+        <img src="./assets/img/papel.png" alt="Papel" onclick="seleccionarJugada('papel')">
+        <img src="./assets/img/tijeras.png" alt="Tijeras" onclick="seleccionarJugada('tijeras')">
+    </div>
+
+    <button  id="botonJugar" onclick="iniciarJuego()">¡Jugar!</button>
+    <div id="resultado"></div>
+    <script src="./assets/js/logica.js"></script>
+</body>
+
+</html>

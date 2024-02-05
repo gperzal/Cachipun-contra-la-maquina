@@ -1,0 +1,111 @@
+#logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+label {
+    color: #573737;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#opciones img {
+    cursor: pointer;
+    margin: 10px;
+    width: 100px; /* Tamaño de las imágenes de opciones */
+}
+
+#opciones {
+    text-align: center;
+    margin: 60px auto;
+}
+
+  
+ #opciones  img:hover{
+    transform: scale(1.2)
+  
+  }
+
+
+
+body {
+    background: #aaa0aa;
+    text-align: center;
+    }
+  
+  .container {
+    padding-top: 30px;
+  } 
+    
+h1 {
+    color: #4e0c0c;
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 300;
+}
+    
+ #logo img {
+    max-width: 100%;
+    display: block;
+    
+}
+  
+ 
+  button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #5984d4;
+    padding: 20px 80px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: 0 6px #2E282A;
+
+    color: rgb(15, 12, 12);
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+    
+
+  button:hover {
+    box-shadow: 0 4px #2E282A;
+    top: 2px; 
+  }
+  
+  button:active {
+    box-shadow: none;
+    top: 6px; 
+  } 
+
+  #botonJugar:disabled {
+    background-color: #cccccc; /* Color gris */
+    color: #666666; /* Color de texto más oscuro para el contraste */
+    cursor: not-allowed; /* Cambiar el cursor para indicar que el botón está deshabilitado */
+}
+
+
+  span{
+    font-size: 2rem;
+    font-weight: 900;
+  
+  }
+  
+  #resultado{
+    color: rgb(15, 12, 12);
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
