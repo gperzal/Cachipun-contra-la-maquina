@@ -2,6 +2,19 @@
 let jugadaUsuario = '';
 let juegosRestantes = 0; // Contador para la cantidad de juegos restantes
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Eventos para las imágenes de jugada
+    document.querySelector('img[alt="Piedra"]').addEventListener('click', () => seleccionarJugada('piedra'));
+    document.querySelector('img[alt="Papel"]').addEventListener('click', () => seleccionarJugada('papel'));
+    document.querySelector('img[alt="Tijeras"]').addEventListener('click', () => seleccionarJugada('tijeras'));
+
+    // Evento para el botón de jugar
+    document.getElementById('botonJugar').addEventListener('click', iniciarJuego);
+});
+
+
+
 function seleccionarJugada(jugada) {
   
     jugadaUsuario = jugada;
@@ -29,7 +42,7 @@ function ejecutarJuego() {
 
     if (juegosRestantes > 0) {
         botonJugar.disabled = true;
-        document.getElementById('resultado').innerHTML += 'Selecciona tu próxima jugada.<br><br>';
+        document.getElementById('resultado').innerHTML += '<spam id="jugada">Selecciona tu próxima jugada.</spam><br><br>';
     } else {
         // Reiniciar la jugada del usuario y la cantidad de juegos restantes para el próximo juego completo
         botonJugar.disabled = false;
@@ -39,7 +52,7 @@ function ejecutarJuego() {
         setTimeout(function(){
             document.getElementById('resultado').innerHTML = '';
             document.getElementById('cantidad').value ='1';
-        }, 10000);
+        }, 20000);
 
     }
 }
@@ -75,12 +88,6 @@ function iniciarJuego() {
     ejecutarJuego(); // Iniciar el primer juego
 
 
-    // for (let i = 0; i < cantidad; i++) {
-    //     const jugadaMaquina = obtenerJugadaMaquina();
-    //     const ganador = determinarGanador(jugadaUsuario, jugadaMaquina);
-    //     mostrarResultado(ganador, jugadaUsuario, jugadaMaquina, i + 1);
-    // }
-    // Reiniciar la jugada del usuario para el próximo juego
     jugadaUsuario = '';
     
 }

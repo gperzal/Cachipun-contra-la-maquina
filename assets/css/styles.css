@@ -1,7 +1,7 @@
 #logo {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 
@@ -17,7 +17,6 @@ label {
 }
 
 #opciones {
-    text-align: center;
     margin: 10px auto;
 }
 
@@ -43,7 +42,6 @@ body {
 h1 {
     color: #4e0c0c;
     font-size: 3rem;
-    text-align: center;
     font-weight: 300;
 }
     
@@ -65,7 +63,6 @@ h1 {
     margin: 10px auto;
     border-radius: 20px;
     box-shadow: 0 6px #2E282A;
-
     color: rgb(15, 12, 12);
     font-size: 1rem;
     font-weight: 900;
@@ -93,8 +90,18 @@ h1 {
   span{
     font-size: 2rem;
     font-weight: 900;
-  
+    margin: 80px auto;
+    padding: 90px auto;
   }
+
+  #jugada{
+    font-size: 3rem;
+    color: rgb(168, 99, 99);
+    font-weight: 900;
+    margin: 80px auto;
+    padding: 90px auto;
+  }
+  
   
   #resultado{
     color: rgb(15, 12, 12);
@@ -103,5 +110,6 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    margin: 30px auto;
   }
   
